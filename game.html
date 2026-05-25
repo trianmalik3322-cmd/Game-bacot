@@ -1,0 +1,59 @@
+<!-- SANDBOX WORLD - FULL GAME (Single File) -->
+<!-- Buka file ini di browser untuk main offline! -->
+<!-- File ini adalah copy dari dist/index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>🌍 SandBox World - Build Your Universe!</title>
+    <style>
+      body { margin: 0; padding: 0; background: #0f0f1a; display: flex; align-items: center; justify-content: center; height: 100vh; font-family: system-ui, sans-serif; }
+      .info { color: white; text-align: center; }
+      .info h1 { font-size: 48px; margin-bottom: 16px; }
+      .info p { color: #a78bfa; font-size: 18px; margin-bottom: 24px; }
+      .info a { color: #60a5fa; font-size: 14px; }
+      .steps { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 24px; max-width: 400px; margin: 0 auto; text-align: left; }
+      .steps h2 { color: #a78bfa; font-size: 16px; margin-bottom: 16px; text-align: center; }
+      .step { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+      .step-num { background: #7c3aed; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 900; flex-shrink: 0; }
+      .step-text { color: #d1d5db; font-size: 13px; line-height: 1.5; }
+      .step-text code { background: rgba(124,58,237,0.3); padding: 2px 6px; border-radius: 4px; font-size: 12px; color: #a78bfa; }
+    </style>
+  </head>
+  <body>
+    <div class="info">
+      <h1>🌍</h1>
+      <p><strong>SandBox World</strong><br/>File ini adalah panduan untuk main offline!</p>
+      <div class="steps">
+        <h2>📱 Cara Main Offline di HP</h2>
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text">Install <strong>Termux</strong> dari F-Droid: <code>f-droid.org</code></div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">Buka Termux, ketik:<br/><code>pkg update -y && pkg install nodejs -y</code></div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">Kasih akses storage:<br/><code>termux-setup-storage</code></div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-text">Masuk folder project:<br/><code>cd /sdcard/Download/Update-version-change</code></div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-text">Build game:<br/><code>npm install && npm run build</code></div>
+        </div>
+        <div class="step">
+          <div class="step-num">6</div>
+          <div class="step-text">Buka di Chrome:<br/><code>file:///sdcard/.../dist/index.html</code></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
