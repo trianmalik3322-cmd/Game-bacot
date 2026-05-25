@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #07070f;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #111128;
+}
+::-webkit-scrollbar-thumb {
+  background: #4c1d95;
+  border-radius: 2px;
+}
+
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
